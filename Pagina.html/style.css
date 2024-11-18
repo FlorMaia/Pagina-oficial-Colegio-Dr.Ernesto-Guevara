@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Reset básico para eliminar márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px; /* Ancho fijo para el formulario */
+}
+
+/* Estilo de los encabezados */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo de las etiquetas y entradas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+/* Estilo para el foco en los campos de entrada */
+input:focus,
+select:focus {
+    border-color: #007bff; /* Cambia el color del borde al hacer foco */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+/* Estilo de los botones */
+button {
+    width: 48%; /* Ancho de los botones */
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Color verde para el botón de registro */
+}
+
+button[type="reset"] {
+    background-color: #dc3545; /* Color rojo para el botón de cancelar */
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+button:hover {
+    opacity: 0.9; /* Cambia la opacidad al pasar el ratón */
+}
